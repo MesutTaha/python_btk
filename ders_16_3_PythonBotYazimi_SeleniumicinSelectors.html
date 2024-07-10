@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header  { 
+            font-size: 45px;
+            color: red;
+        }
+        .course h2 {
+            color: blue;
+        }
+        .course.angular {
+            background-color: yellow;
+            
+        }
+        #username {
+            padding: 20px;
+            border-color: red;
+        }
+        input[type="password"] { 
+            padding: 30px;
+        }
+        form {
+            color: green;
+            font-size: 20px;
+        }
+    </style><!--style in içersine idleri çağırarak onların renk ve fontlarını değiştirebilirsin-->
+    <!--
+        id  için: (#)
+        class için: (.) .course'dan sonra h2'yi yazmassak tüm class'ı maviye boyar
+        input için: Hiç bir şey koymiycan ama belirli input için --v 
+        input [type="password"]{
+        }
+        kullanabilirsin
+        -->
+</head>
+<body>
+    <div id="container">
+        <h1 id="header">Kurslar</h1>
+        <hr> <!--Çizgi Koyuyor-->
+        <div class="course python">
+            <h2>Python Kursu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ducimus!</p> <!-- 10 kelimelik yer tutuyor-->
+        </div>
+        <div class="course angular">
+            <h2>Angular Kursu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ducimus!</p> <!-- 10 kelimelik yer tutuyor-->
+        </div>
+        <div class="course javascript">
+            <h2>Javascript Kursu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ducimus!</p> <!-- 10 kelimelik yer tutuyor-->
+        </div>
+
+        <div>
+            <form >
+                Username:<input type="username" name="username" id="username"><br>
+                Password: <input type="password" name="password" id="password"><br>
+                <input type="submit" value="Login"><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
