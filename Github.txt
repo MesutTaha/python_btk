@@ -1,0 +1,5 @@
+git add .
+git commit -m “yüklemek istediğiniz dosya açıklaması”
+git remote add origin https://github.com/MesutTaha/python_btk.git
+git branch -M main
+git push -u origin main
